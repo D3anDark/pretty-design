@@ -29,6 +29,10 @@ footer a{
 
 footer a:hover{
     color: var(--accent);
+
+    transform: scale(1.1);
+
+    transition: all 0.5s;
 }
 
 footer a::after{
@@ -42,5 +46,17 @@ footer a::after{
 
 footer a:hover::after{
     width: 100%;
+    transition: width 0.5s;
+}
+
+footer a:active{
+    transform: scale(0.9);
+
+    transition: all 0.5s;
+}
+
+footer a:active::after{
+    width: 0;
+
     transition: width 0.5s;
 }

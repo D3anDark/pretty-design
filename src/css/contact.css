@@ -79,6 +79,9 @@
 
 #phone:hover{
     color: var(--accent);
+
+    transform: scale(1.1);
+
     transition: all 0.5s;
 }
 
@@ -123,6 +126,8 @@
 #mail:hover{
     color: var(--accent);
 
+    transform: scale(1.1);
+
     transition: all 0.4s;
 }
 
@@ -165,6 +170,9 @@
 
 #discord:hover{
     color: var(--accent);
+
+    transform: scale(1.1);
+
     transition: all 0.5s;
 }
 
@@ -233,6 +241,18 @@
     background-color: var(--accent);
     color: var(--background);
 
+    transform: scale(1.1);
+
     transition: all 0.4s;
+}
+
+.form-button button:active{
+    transform: scale(0.9);
+}
+
+.form-button button:active::after{
+    width: 0;
+
+    transition: width 0.5s;
 }
 /*end of form*/

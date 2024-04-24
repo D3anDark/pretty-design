@@ -63,7 +63,9 @@ nav svg:hover{
 .navLinks a:hover{
     color: var(--accent);
 
-    transition: color 0.4s;
+    transform: scale(1.2);
+
+    transition: 0.4s;
 }
 
 .navLinks a:hover::after{
@@ -71,12 +73,14 @@ nav svg:hover{
     transition: width 0.4s;
 }
 
-.navLinks a.active::after{
-    width: 100%;
+.navLinks a:active{
+    transform: scale(0.9);
 }
 
-.navLinks a.active{
-    color: var(--accent);
+.navLinks a:active::after{
+    width: 0;
+
+    transition: width 0.5s;
 }
 
 .dropdown-button {
