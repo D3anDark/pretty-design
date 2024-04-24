@@ -1,0 +1,158 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background);
+
+    position: fixed;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-bottom: 1px solid var(--primary);
+}
+
+nav svg{
+    fill: var(--text);
+
+    transition: all 0.4s;
+}
+
+nav svg:hover{
+    fill: var(--accent);
+
+    transition: all 0.4s;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.navLinks a{
+    color: var(--text);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    margin: 0 1rem;
+
+    transition: all 0.4s;
+}
+
+.navLinks a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.4s;
+}
+
+.navLinks a:hover::after{
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.navLinks a.active::after{
+    width: 100%;
+}
+
+.navLinks a.active{
+    color: var(--accent);
+}
+.dropdown-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--accent);
+    color: var(--text);
+
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 16px;
+    font-size: 16px;
+
+    transition: all 0.4s;
+}
+
+.dropdown-button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    border-radius: 0;
+
+    transition: all 0.4s;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: var(--background);
+
+    border: 1px solid var(--primary);
+
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+
+    animation: slideIn 0.5s;
+    transition: all 0.5s;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-content a {
+    color: var(--text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        padding: 1rem;
+    }
+
+    .navLinks{
+        display: none;
+    }
+}

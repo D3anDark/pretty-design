@@ -1,0 +1,29 @@
+:root{
+    --text: #e3e0f2;
+    --background: #040308;
+    --primary: #a697e2;
+    --secondary: #311c84;
+    --accent: #4c26dd;
+    --font-family: 'Clash Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: var(--font-family);
+
+    scroll-behavior: smooth;
+    scrollbar-color: #a697e2 #040308;
+    scrollbar-width: thin;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
