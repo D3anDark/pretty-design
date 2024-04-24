@@ -23,7 +23,41 @@
     scrollbar-width: thin;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+
+    z-index: -20000;
+}
+
+a, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
 ::selection {
     background-color: var(--primary);
     color: var(--secondary);
+}
+
+.spoiler {
+    filter: blur(5px);
+    transition: all 0.5s;
+
+    user-select: none;
+
+    cursor: help;
+}
+
+.spoiler:hover {
+    filter: blur(0);
+    transition: all 0.5s;
+}
+
+deepl-input-controller, deepl-inline-trigger{
+    display: none;
 }

@@ -1,6 +1,18 @@
+.buttons{
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    user-select: none;
+}
 .buttons a {
     padding: 1rem 2rem;
     background-color: var(--background);
+
+    border: 2px solid var(--secondary);
+
+
     color: var(--text);
     text-decoration: none;
     text-transform: uppercase;
@@ -15,7 +27,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: var(--accent);
+    background: var(--secondary);
     transition: width 0.4s;
 }
 

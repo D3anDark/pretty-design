@@ -12,6 +12,8 @@ nav {
 
     z-index: 1000;
 
+    user-select: none;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     border-bottom: 1px solid var(--primary);
@@ -58,6 +60,12 @@ nav svg:hover{
     transition: width 0.4s;
 }
 
+.navLinks a:hover{
+    color: var(--accent);
+
+    transition: color 0.4s;
+}
+
 .navLinks a:hover::after{
     width: 100%;
     transition: width 0.4s;
@@ -70,8 +78,9 @@ nav svg:hover{
 .navLinks a.active{
     color: var(--accent);
 }
+
 .dropdown-button {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -147,16 +156,3 @@ nav svg:hover{
     color: var(--background);
 }
 
-@media screen and (max-width: 768px){
-    nav{
-        padding: 1rem;
-    }
-
-    .navLinks{
-        display: none;
-    }
-
-    .dropdown-content{
-        min-width: 100svh;
-    }
-}

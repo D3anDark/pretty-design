@@ -1,0 +1,237 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 100svh;
+    background-color: var(--background);
+
+    border-top: 2px solid var(--primary);
+}
+
+.contact h2{
+    font-size: 5rem;
+    color: var(--text);
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 5rem 2rem;
+}
+
+.contact-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border-right: 2px solid var(--primary);
+
+    gap: 1rem;
+
+    width: 25%;
+
+    padding: 5rem 2rem;
+}
+
+.contact-content::after {
+    content: "OR";
+    color: var(--secondary);
+    position: absolute;
+    right: -30px; /* Ajust this value to move the "OR" text along the border */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--background);
+    font-size: 2rem;
+    padding: 0 10px; /* Add some padding so the text doesn't touch the border */
+}
+
+/*Phone text*/
+#phone{
+    width: fit-content;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.5s;
+
+}
+/*Phone*/
+#phone::before{
+    content: 'Phone:';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#phone:hover{
+    color: var(--accent);
+    transition: all 0.5s;
+}
+
+/*underline*/
+#phone::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.5s;
+}
+
+#phone:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+/*end of the phone text*/
+
+
+/*Email text*/
+#mail::before{
+    content: 'Email';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#mail{
+    width: fit-content;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.4s;
+}
+
+/*underline*/
+#mail:hover{
+    color: var(--accent);
+
+    transition: all 0.4s;
+}
+
+#mail::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.4s;
+}
+
+#mail:hover::after{
+    width: 100%;
+    transition: width 0.4s;
+}
+/*end of the email text*/
+
+
+/*Discord text*/
+#discord{
+    width: fit-content;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+/*Discord text*/
+#discord::before{
+    content: 'Discord';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#discord:hover{
+    color: var(--accent);
+    transition: all 0.5s;
+}
+
+/*underline*/
+#discord::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.5s;
+}
+
+#discord:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/*end of the discord text*/
+
+
+/*Form*/
+.form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+
+    user-select: none;
+
+    gap: 1rem;
+}
+
+.form-button a{
+    padding: 1rem 2rem;
+    background-color: var(--background);
+
+    border: 2px solid var(--secondary);
+
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+
+    transition: all 0.4s;
+}
+
+/*underline*/
+.form-button a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.4s;
+}
+
+.form-button a:hover::after{
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.form-button a:hover{
+    background-color: var(--accent);
+    color: var(--background);
+
+    transition: all 0.4s;
+}
+/*end of form*/
