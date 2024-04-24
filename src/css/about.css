@@ -6,6 +6,9 @@
 
     border-top: 2px solid var(--primary);
 
+    width: 100vw;
+    min-height: 100vh;
+
     gap: 1rem;
 
     padding: 5rem 2rem;

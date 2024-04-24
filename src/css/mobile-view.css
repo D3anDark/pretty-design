@@ -30,7 +30,7 @@
     main p{
         font-size: 1rem;
 
-        width: 70%;
+        width: 75%;
     }
 
     main .buttons{
@@ -111,5 +111,9 @@
         padding: 1rem 2rem;
 
         width: 100%;
+    }
+
+    footer{
+        position: relative;
     }
 }

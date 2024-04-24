@@ -21,10 +21,17 @@
     scroll-behavior: smooth;
     scrollbar-color: #a697e2 #040308;
     scrollbar-width: thin;
+
+    /*overflow-x: hidden;*/
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    color: transparent !important;
 }
 
 body {
