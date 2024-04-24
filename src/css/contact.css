@@ -9,6 +9,8 @@
     height: 100svh;
     background-color: var(--background);
 
+    margin: 0  0 1rem 0;
+
     border-top: 2px solid var(--primary);
 }
 
