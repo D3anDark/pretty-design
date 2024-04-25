@@ -7,9 +7,11 @@ main {
     background-color: transparent;
 
     width: 100svw;
-    height: 100svh;
+    min-height: 100svh;
 
     padding: 15rem 1rem;
+
+    overflow:  hidden;
 }
 
 /*svg next to h1*/
@@ -45,7 +47,7 @@ main p{
     opacity: 0.2;
 
     width: 100%;
-    height: 100vh;
+    height: 100svh;
 
     z-index: -10000;
 }

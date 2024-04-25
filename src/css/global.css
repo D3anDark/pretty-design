@@ -16,13 +16,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    font-family: var(--font-family);
-
     scroll-behavior: smooth;
     scrollbar-color: #a697e2 #040308;
     scrollbar-width: thin;
 
-    /*overflow-x: hidden;*/
+    font: 400 16px var(--font-family);
 }
 
 html, body {

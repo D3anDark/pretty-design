@@ -6,7 +6,7 @@
     flex-direction: column;
 
     width: 100svw;
-    height: 90svh;
+    min-height: 90svh;
     background-color: var(--background);
 
     border-top: 2px solid var(--primary);
@@ -48,12 +48,12 @@
     content: "OR";
     color: var(--secondary);
     position: absolute;
-    right: -30px; /* Ajust this value to move the "OR" text along the border */
+    right: -30px;
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--background);
     font-size: 2rem;
-    padding: 0 10px; /* Add some padding so the text doesn't touch the border */
+    padding: 0 10px;
 }
 
 /*Phone text*/
