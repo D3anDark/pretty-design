@@ -56,6 +56,9 @@ a, a:visited {
     user-select: none;
 
     cursor: help;
+
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .spoiler:hover {
