@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     nav{
         padding: 1rem;
     }
@@ -24,7 +24,7 @@
         flex-direction: column;
         align-items: center;
 
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     main p{
@@ -112,215 +112,13 @@
 
         width: 100%;
     }
-}
 
-@media screen and (max-width: 425px){
-    main h1{
-        font-size: 1.5rem;
-    }
-
-    main p{
-        font-size: 0.75rem;
-    }
-
-    .about .header{
-        font-size: 1.5rem;
-    }
-
-    .about p{
-        font-size: 0.75rem;
-    }
-
-    .contact .header{
-        font-size: 1.5rem;
-    }
-
-    .contact-content{
-        width: 100%;
-        border-right: none;
-    }
-
-    .contact-info{
-        padding: 1rem;
-
-        flex-direction: column;
-    }
-
-    #phone{
-        width: fit-content;
-    }
-
-    .contact-content::after{
-        display: none;
-    }
-
-    .contact-content{
-        padding: 1rem;
-    }
-
-    .form-button{
-        padding: 0.5rem 1rem;
-
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 320px){
-    main h1{
-        font-size: 1.25rem;
-    }
-
-    main p{
-        font-size: 0.5rem;
-    }
-
-    .about .header{
-        font-size: 1.25rem;
-    }
-
-    .about p{
-        font-size: 0.5rem;
-    }
-
-    .contact .header{
-        font-size: 1.25rem;
-    }
-
-    .contact-content{
-        width: 100%;
-        border-right: none;
-    }
-
-    .contact-info{
-        padding: 1rem;
-
-        flex-direction: column;
-    }
-
-    #phone{
-        width: fit-content;
-    }
-
-    .contact-content::after{
-        display: none;
-    }
-
-    .contact-content{
-        padding: 1rem;
-    }
-
-    .form-button{
-        padding: 0.5rem 1rem;
-
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 280px){
-    main h1{
-        font-size: 1rem;
-    }
-
-    main p{
-        font-size: 0.5rem;
-    }
-
-    .about .header{
-        font-size: 1rem;
-    }
-
-    .about p{
-        font-size: 0.5rem;
-    }
-
-    .contact .header{
-        font-size: 1rem;
-    }
-
-    .contact-content{
-        width: 100%;
-        border-right: none;
-    }
-
-    .contact-info{
-        padding: 1rem;
-
-        flex-direction: column;
-    }
-
-    #phone{
-        width: fit-content;
-    }
-
-    .contact-content::after{
-        display: none;
-    }
-
-    .contact-content{
-        padding: 1rem;
-    }
-
-    .form-button{
-        padding: 0.5rem 1rem;
-
-        width: 100%;
+    .form-button button{
+        font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 240px){
-    main h1{
-        font-size: 0.75rem;
-    }
-
-    main p{
-        font-size: 0.5rem;
-    }
-
-    .about .header{
-        font-size: 0.75rem;
-    }
-
-    .about p{
-        font-size: 0.5rem;
-    }
-
-    .contact .header{
-        font-size: 0.75rem;
-    }
-
-    .contact-content{
-        width: 100%;
-        border-right: none;
-    }
-
-    .contact-info{
-        padding: 1rem;
-
-        flex-direction: column;
-    }
-
-    #phone{
-        width: fit-content;
-    }
-
-    .contact-content::after{
-        display: none;
-    }
-
-    .contact-content{
-        padding: 1rem;
-    }
-
-    .form-button{
-        padding: 0.5rem 1rem;
-
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 425px){
     main h1{
         font-size: 2.5rem;
     }
@@ -329,44 +127,32 @@
         font-size: 1rem;
     }
 
+    .buttons a{
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+    }
+
     .about .header{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .contact .header{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .contact-content{
-        width: 100%;
-        border-right: none;
-    }
-
-    .contact-info{
-        padding: 2rem;
-
-        flex-direction: column;
-    }
-
-    #phone{
-        width: fit-content;
-    }
-
-    .contact-content::after{
-        display: none;
-    }
-
-    .contact-content{
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .form-button{
-        padding: 1rem 2rem;
+        padding: 0.5rem 1rem;
+    }
 
-        width: 100%;
+    .form-button button{
+        font-size: 0.8rem;
     }
 }
