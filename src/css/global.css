@@ -26,6 +26,8 @@
 html, body {
     position:relative;
     overflow-x:hidden;
+
+    z-index: -20000;
 }
 
 
