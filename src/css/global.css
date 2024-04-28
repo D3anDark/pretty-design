@@ -24,8 +24,10 @@
 }
 
 html, body {
+    width: auto !important;
     overflow-x: hidden !important;
 }
+
 
 ::-webkit-scrollbar-thumb {
     background: transparent !important;
