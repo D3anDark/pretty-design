@@ -24,8 +24,8 @@
 }
 
 html, body {
-    width: 100% !important;
-    overflow-x: hidden;
+    position:relative;
+    overflow-x:hidden;
 }
 
 
