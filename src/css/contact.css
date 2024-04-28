@@ -193,6 +193,52 @@
 
 /*end of the discord text*/
 
+/*telegram text*/
+#telegram{
+    width: fit-content;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+/*Discord text*/
+#telegram::before{
+    content: 'Telegram';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#telegram:hover{
+    color: var(--accent);
+
+    transform: scale(1.1);
+
+    transition: all 0.5s;
+}
+
+/*underline*/
+#telegram::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.5s;
+}
+
+#telegram:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/*end of the telegram text*/
+
 
 /*Form*/
 .form-button{
