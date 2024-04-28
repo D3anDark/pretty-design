@@ -24,7 +24,7 @@
 }
 
 html, body {
-    width: auto !important;
+    width: 100% !important;
     overflow-x: hidden !important;
 }
 
