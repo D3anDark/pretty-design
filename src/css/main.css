@@ -41,7 +41,7 @@ main p{
 /*svg in background*/
 #background-svg{
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: -20%;
 
     opacity: 0.2;
