@@ -11,7 +11,7 @@
     color: var(--text);
     gap: 3rem;
 
-    padding: 2rem 0 2rem 0;
+    padding: 6rem 0 2rem 0;
 }
 
 #prices svg{
@@ -119,6 +119,8 @@
     width: 50%;
 
     opacity: 0.4;
+
+    transform: translateY(-90%);
 
     text-align: center;
 }
