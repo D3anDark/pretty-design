@@ -14,18 +14,18 @@ main {
     overflow:  hidden;
 }
 
-/*svg next to h1*/
-h1 svg{
-    transform: translateY(5px);
-
-    width: 50px;
-}
-
 /*big heading*/
 main h1{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+h1 svg{
+    fill: var(--text);
+
+    width: 70px;
+    height: 70px;
 }
 
 /*paragraph*/
@@ -35,14 +35,16 @@ main p{
 
     width: 30%;
 
-    margin: 0 0 2rem 3rem;
+    margin: 0 0 2rem 4.5rem;
 }
 
 /*svg in background*/
 #background-svg{
     position: absolute;
-    top: 2%;
+    top: 1%;
     right: -20%;
+
+    fill: var(--secondary);
 
     opacity: 0.2;
 

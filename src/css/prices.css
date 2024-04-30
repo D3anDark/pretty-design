@@ -1,0 +1,124 @@
+#prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100svh;
+    width: 100%;
+
+    border-top: 2px solid var(--primary);
+    color: var(--text);
+    gap: 3rem;
+
+    padding: 2rem 0 2rem 0;
+}
+
+#prices svg{
+    fill: var(--text);
+    width: 100px;
+    min-height: 100px;
+}
+
+#prices h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+/*table styling*/
+
+#prices table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+/*table rows and columns styling*/
+
+#prices th, #prices td {
+    width: 50%;
+}
+
+/*table header styling*/
+
+#prices th{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--accent);
+    padding: 1rem 0;
+    border: 1px solid var(--primary);
+}
+
+/*table products styling*/
+
+#prices td{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 0;
+    border: 1px solid var(--primary);
+
+}
+
+/*services background color*/
+
+#prices td:nth-child(odd){
+    background-color: var(--secondary);
+    font-weight: 700;
+
+    border: 1px solid var(--primary);
+
+    transition: all 0.4s;
+
+}
+
+#prices td:hover:nth-child(odd){
+    background-color: var(--primary);
+    color: var(--secondary);
+
+    transition: all 0.4s;
+
+}
+
+/*prices background color*/
+
+#prices td:nth-child(even){
+    background-color: var(--background);
+    font-weight: 400;
+
+    border: 1px solid var(--primary);
+
+    transition: all 0.4s;
+}
+
+#prices td:hover:nth-child(even) {
+    background-color: var(--accent);
+    color: var(--background);
+
+    transition: all 0.4s;
+}
+
+
+/*on hover selection color change*/
+
+#prices td:hover:nth-child(odd)::selection {
+    background-color: var(--text);
+    color: var(--secondary);
+}
+
+#prices td:hover:nth-child(even)::selection {
+    background-color: var(--text);
+    color: var(--secondary);
+}
+
+/*under table paragraph styling*/
+
+#prices p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 50%;
+
+    opacity: 0.4;
+
+    text-align: center;
+}

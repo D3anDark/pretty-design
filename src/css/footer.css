@@ -7,6 +7,8 @@ footer{
     position: relative;
     bottom: 0;
 
+    text-align: center;
+
     width: 100%;
 
     z-index: 100;
@@ -25,6 +27,8 @@ footer a{
 
     color: white;
     text-decoration: none;
+
+    transition: all 0.5s;
 }
 
 footer a:hover{

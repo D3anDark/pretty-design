@@ -12,8 +12,10 @@
     border-top: 2px solid var(--primary);
 }
 
-.contact h2{
+.contact h3{
     font-size: 5rem;
+    font-weight: 700;
+
     color: var(--text);
 }
 
@@ -37,7 +39,7 @@
 
     border-right: 2px solid var(--primary);
 
-    gap: 1rem;
+    gap: 2rem;
 
     width: 25%;
 
@@ -238,7 +240,6 @@
 }
 
 /*end of the telegram text*/
-
 
 /*Form*/
 .form-button{

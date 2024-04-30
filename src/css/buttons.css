@@ -5,6 +5,8 @@
     gap: 1rem;
 
     user-select: none;
+
+    margin: 0 2rem;
 }
 .buttons a {
     padding: 1rem 2rem;
