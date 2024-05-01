@@ -116,11 +116,5 @@
 #prices p{
     font-size: 1.25rem;
     font-weight: 300;
-    width: 50%;
-
-    opacity: 0.4;
-
-    transform: translateY(-90%);
-
-    text-align: center;
+    width: fit-content;
 }
