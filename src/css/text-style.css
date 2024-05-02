@@ -54,10 +54,6 @@ a, a:visited {
     transition: all 0.5s;
 }
 
-.bold-text {
-    font-weight: 700;
-}
-
 .italic-text {
     font-style: italic;
 }
