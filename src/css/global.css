@@ -37,11 +37,6 @@ span {
     font-family: inherit;
 }
 
-::-webkit-scrollbar-thumb {
-    background: transparent !important;
-    color: transparent !important;
-}
-
 body {
     background-color: var(--background);
     color: var(--text);
@@ -49,66 +44,6 @@ body {
     z-index: -20000;
 }
 
-a, a:visited {
-    color: var(--text);
-    text-decoration: none;
-}
-
-::selection {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
-
-.spoiler {
-    filter: blur(5px);
-    transition: all 0.5s;
-
-    user-select: none;
-
-    cursor: help;
-}
-
-.spoiler:hover {
-    filter: blur(0);
-
-    user-select: all;
-
-    transition: all 0.5s;
-}
-
-.spoiler::after {
-    content: attr(data-spoiler);
-    color: transparent;
-    background-color: currentColor;
-    transition: all 0.5s;
-}
-
-.bold-text {
-    font-weight: 700;
-}
-
-.italic-text {
-    font-style: italic;
-}
-
-.underline-text {
-    text-decoration: underline;
-}
-
-.comment {
-    color: var(--text);
-    opacity: 0.6;
-
-    font-style: italic;
-}
-
-.comment::before {
-    content: '/* ';
-}
-
-.comment::after {
-    content: ' */';
-}
 
 deepl-input-controller, deepl-inline-trigger{
     opacity: 0;

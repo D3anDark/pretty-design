@@ -17,20 +17,29 @@
 
     main{
         margin-top: 3rem;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     main h1{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
         font-size: 2.5rem;
     }
 
     main p{
         font-size: 1rem;
-
         width: 75%;
+        margin: 1rem 0;
+        text-align: center;
     }
 
     main .buttons{
@@ -120,6 +129,7 @@
 
     main p{
         font-size: 1rem;
+
     }
 
     .buttons a{

@@ -7,14 +7,12 @@ footer{
     position: relative;
     bottom: 0;
 
-    text-align: center;
-
     width: 100%;
 
     z-index: 100;
 }
 
-footer div{
+.footer-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +20,7 @@ footer div{
     gap: 2rem;
 }
 
-footer a{
+.footer-content a{
     font-size: 1.5rem;
 
     color: white;
@@ -31,7 +29,7 @@ footer a{
     transition: all 0.5s;
 }
 
-footer a:hover{
+.footer-content a:hover{
     color: var(--accent);
 
     transform: scale(1.1);
@@ -39,7 +37,7 @@ footer a:hover{
     transition: all 0.5s;
 }
 
-footer a::after{
+.footer-content a::after{
     content: '';
     display: block;
     width: 0;
@@ -48,18 +46,18 @@ footer a::after{
     transition: width 0.5s;
 }
 
-footer a:hover::after{
+.footer-content a:hover::after{
     width: 100%;
     transition: width 0.5s;
 }
 
-footer a:active{
+.footer-content a:active{
     transform: scale(0.9);
 
     transition: all 0.5s;
 }
 
-footer a:active::after{
+.footer-content a:active::after{
     width: 0;
 
     transition: width 0.5s;
